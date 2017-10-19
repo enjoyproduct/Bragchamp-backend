@@ -1688,7 +1688,8 @@ function challengevideo($user_id, $post_id, $thumbnail_url, $conn) {
 				);
 			$notificationContent = array(
 					"user" => $userData,
-					"challenge" => $chData
+					"challenge" => $chData,
+					"post" => $postData
 				);
 			$content = json_encode($notificationContent);
 
